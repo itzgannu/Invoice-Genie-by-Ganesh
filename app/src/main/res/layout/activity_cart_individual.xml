@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart_Individual">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/individual_toolBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/individual_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/individual_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/back"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/individual_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_name"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/aldrich"
+                android:layout_marginTop="8dp"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/individual_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/individual_toolBarLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/individual_product_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/product_image"
+            app:srcCompat="@drawable/grocery" />
+
+        <View
+            android:id="@+id/individual_product_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/individual_product_information_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/information"
+            android:fontFamily="@font/aldrich"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/individual_product_price_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/individual_product_price_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/price"
+                android:fontFamily="@font/aldrich"/>
+
+            <TextView
+                android:id="@+id/individual_product_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/value"
+                android:fontFamily="@font/aldrich"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/individual_product_package_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dp"
+            android:padding="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/individual_product_package_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/package_unitType" />
+
+            <TextView
+                android:id="@+id/individual_product_package"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/value"
+                android:fontFamily="@font/aldrich"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/individual_product_description_linear"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="4dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/individual_product_description_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/individual_product_description"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/value"
+                android:fontFamily="@font/aldrich"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/individual_product_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:id="@+id/individual_product_stepper_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/individual_product_delete_button"
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="4dp"
+                app:srcCompat="@drawable/ic_minus"
+                android:contentDescription="@string/todo" />
+
+            <ImageButton
+                android:id="@+id/individual_product_add_button"
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="4dp"
+                app:srcCompat="@drawable/ic_add"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/individual_product_cart_count_text"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="#78C2C5"
+                android:text="@string/one"
+                android:fontFamily="@font/aldrich"
+                android:clickable="false"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/individual_product_add_to_cart_button"
+            android:layout_weight="0.4"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text="@string/add_to_cart"
+            android:fontFamily="@font/aldrich"
+            android:textStyle="bold"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

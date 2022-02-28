@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recycle_cart_layout_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/cart_card_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/cart_card_product_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:layout_marginEnd="4dp"
+                android:text="@string/one"
+                android:fontFamily="@font/aldrich"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/cart_card_product_image"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                app:srcCompat="@drawable/grocery"
+                android:padding="4dp"
+                android:contentDescription="@string/product_image" />
+
+            <LinearLayout
+                android:id="@+id/cart_card_product_info_linear_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cart_card_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_name"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/aldrich"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/cart_card_product_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/aldrich"
+                    android:textSize="12sp"
+                    android:text="@string/large_text"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cart_card_product_total_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:layout_marginStart="4dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/aldrich"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="@string/price"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

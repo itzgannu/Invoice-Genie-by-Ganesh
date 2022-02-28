@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyerMore">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/buyer_more_toolBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/buyer_more_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/buyer_more_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/seller_more_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buyer_more_toolBarLayout"
+        android:layout_above="@+id/buyer_bottom"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/buyer_more_profile_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:background="@drawable/background_more"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:text="@string/profile_title"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/aldrich"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/ic_forward"
+                android:contentDescription="@string/profile_title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buyer_more_change_password_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:background="@drawable/background_more"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:text="@string/change_password"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/aldrich"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/ic_forward"
+                android:contentDescription="@string/profile_title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buyer_more_about_us_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:background="@drawable/background_more"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:text="@string/about_us"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/aldrich"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/ic_forward"
+                android:contentDescription="@string/profile_title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buyer_more_sign_out_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:background="@drawable/background_more"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:text="@string/sign_out"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/aldrich"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:src="@drawable/ic_forward"
+                android:contentDescription="@string/profile_title" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buyer_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/buyer_bottom_nav_menu" />
+
+</RelativeLayout>

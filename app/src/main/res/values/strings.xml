@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">Invoice Genie</string>
+
+    <!--Screen file Strings-->
+    <!--Sign In/Up Screen-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="invoice_genie">INVOICE GENIE</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="login">Login</string>
+    <string name="sign_up">CREATE ACCOUNT</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="seller">Seller</string>
+    <string name="buyer">Buyer</string>
+    <string name="back">GO BACK</string>
+    <string name="company">Company</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="enter_email_id">Enter Email ID</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_company">Enter Company Name</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_same_password">Enter Same Password</string>
+    <string name="toast_select_sell_buy">Select option for Seller/Buyer</string>
+    <string name="toast_success_create_Acc">Account Created Successfully</string>
+    <string name="toast_failed_sign_in">Login Failed</string>
+    <string name="new_user_sign_up">DO NOT HAVE AN ACCOUNT? SIGN UP</string>
+    <string name="already_have_an_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="sign_in_page_image_for_cosmetic_usage_only">Sign In Screen Image (For cosmetic usage only)</string>
+    <string name="sign_up_screen_image_no">Sign Up Screen Image (For cosmetic usage only)</string>
+
+    <!--Home Screen-->
+    <string name="home_title">Hello, there!</string>
+    <string name="new_order">PLACE ORDER</string>
+    <string name="sample_text">Sample Text</string>
+    <string name="back_button_on_click_go_back_to_home_screen">back button - on click go back to home screen</string>
+
+    <!--Profile Screen-->
+    <string name="profile_title">PROFILE</string>
+    <string name="home">HOME</string>
+    <string name="update_profile">UPDATE PROFILE</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="change">CHANGE</string>
+    <string name="current_password">Current Password</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="save">SAVE</string>
+    <string name="loading">Loading…</string>
+
+    <!--Products Screens-->
+    <string name="products_title">PRODUCTS</string>
+    <string name="add_product">ADD PRODUCT</string>
+    <string name="product_name">Product Name</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="product_description">PRODUCT DESCRIPTION</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+    <string name="product_image">Product Image</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="back_button_click_to_go_back_to_products_screen">Back Icon - To go back to Products screen</string>
+
+    <!--Error Messages-->
+    <string name="empty_field">Field is EMPTY</string>
+    <string name="empty_products">No Products were added…</string>
+    <string name="no_products">Add Products to view here…</string>
+    <string name="buyer_no_items">NO ITEMS TO DISPLAY</string>
+
+    <!--Buyer-->
+    <string name="buyer_add_invoice">ADD BILL</string>
+    <string name="buyer_invoice_number">Bill Number</string>
+    <string name="add">ADD</string>
+
+    <!--Cart-->
+    <string name="unit_type">Package</string>
+    <string name="pick">PICK</string>
+    <string name="product_image_picker">Product Image Picker</string>
+    <string name="save_button">Save Button</string>
+    <string name="click_to_close_the_screen">To close the screen</string>
+    <string name="aisle_title">AISLE</string>
+    <string name="cart_button">Cart Icon</string>
+    <string name="information">Information</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="todo">TODO</string>
+    <string name="value">Value</string>
+    <string name="package_unitType">Package</string>
+    <string name="one">1</string>
+    <string name="cart">CART</string>
+    <string name="go_to_checkout">GO TO CHECKOUT</string>
+    <string name="large_text">Large Text is a very large text. Which we can utilize to check how much text will be fit in textview and how the look and feel will be.</string>
+    <string name="customer_details">CUSTOMER DETAILS</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_email">Customer Email</string>
+    <string name="place_order">PLACE ORDER</string>
+    <string name="order_success">ORDER SUCCESS</string>
+    <string name="order_failure">ORDER FAILED</string>
+    <string name="order_id">ORDER ID</string>
+    <string name="order_id_bar_code_image">Order ID Bar Code Image</string>
+    <string name="enter_valid_email">Enter valid Email ID</string>
+    <string name="email_already_used">Email already used</string>
+    <string name="min_8_password">Password should be minimum of 8 characters</string>
+    <string name="first_15_max">First Name should be maximum 15 characters</string>
+    <string name="last_15_max">Last name should be maximum 15 characters</string>
+    <string name="company_used">Company Name already used</string>
+    <string name="company_max_10">Company Name should be maximum 10 characters</string>
+
+    <string name="prod_name_max_15">Product name should be maximum 15 characters</string>
+    <string name="unit_type_max_15">Unit type should be maximum of 15 characters</string>
+
+    <string name="first_name_empty">First Name cannot be empty</string>
+    <string name="last_name_empty">Last name cannot be empty</string>
+    <string name="company_registered">This company is already registered</string>
+    <string name="select_an_avatar">Select an Avatar</string>
+    <string name="close">Close</string>
+    <string name="select_avatar">Select Avatar</string>
+    <string name="items">ITEMS</string>
+    <string name="order_amount">Order Amount</string>
+    <string name="order_date_and_time">Order Date and Time</string>
+    <string name="end_of_invoice">*** END OF INVOICE ***</string>
+    <string name="splash_screen">splash screen</string>
+    <string name="managing_business_in_a_minute">" MANAGING BUSINESS IN A MINUTE "</string>
+    <string name="logging_in_kindly_wait">LOGGING YOU IN, KINDLY WAIT!</string>
+    <string name="something_went_wrong">Something went wrong \n\nTry again Later!</string>
+    <string name="share_invoice">SHARE INVOICE</string>
+    <string name="share">SHARE</string>
+    <string name="mail_Address">invoice.genie@gmail.com</string>
+    <string name="passcode">G@n#2807</string>
+    <string name="email_verification">Email Verification</string>
+    <string name="promotion">promotion</string>
+    <string name="search">search</string>
+    <string name="search_in_aisle">Search a Product in Aisle</string>
+    <string name="search_in_products">Search a Product</string>
+    <string name="cancel">CANCEL</string>
+    <string name="seller_more_title">INFO</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="more">MORE</string>
+    <string name="app_info">Our application helps both the sellers and the buyers to maintain their invoices and purchase orders</string>
+    <string name="write_to_us">WRITE TO US</string>
+    <string name="call_us">CALL US</string>
+    <string name="follow_us">FOLLOW US</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="version_1_0">App Version 1.0</string>
+    <string name="genie_ltd_2021">Genie Ltd 2021</string>
+    <string name="search_a_invoice">Search a Invoice</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="zero">0</string>
+</resources>

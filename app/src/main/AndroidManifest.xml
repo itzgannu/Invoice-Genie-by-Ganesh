@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.invoice.genie">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InvoiceGenie">
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerMore"
+            android:exported="false" />
+        <activity
+            android:name=".SellerMore"
+            android:exported="false" />
+        <activity
+            android:name=".Promotion"
+            android:exported="false" />
+        <activity
+            android:name=".HomeInvoice"
+            android:exported="false" />
+        <activity
+            android:name=".Cart_OrderFailure"
+            android:exported="false" />
+        <activity
+            android:name=".Cart_OrderSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".Cart_PlaceHolder"
+            android:exported="false" />
+        <activity
+            android:name=".Cart_Customer"
+            android:exported="false" />
+        <activity
+            android:name=".Cart_Products"
+            android:exported="false" />
+        <activity
+            android:name=".Cart_Individual"
+            android:exported="false" />
+        <activity
+            android:name=".Cart_Aisle"
+            android:exported="false" />
+        <activity
+            android:name=".AddInvoice"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerHome"
+            android:exported="false" />
+        <activity
+            android:name=".PlaceHolder"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDescription"
+            android:exported="false" />
+        <activity
+            android:name=".AddProduct"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Products"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignIn" />
+        <activity android:name=".SignUp" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".notifications.PushNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

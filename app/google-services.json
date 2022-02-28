@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "855869281232",
+    "project_id": "wip-invoice-genie-android",
+    "storage_bucket": "wip-invoice-genie-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855869281232:android:8934d549a610b5bb3e5fd5",
+        "android_client_info": {
+          "package_name": "com.invoice.genie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855869281232-6cndejch2n6kg4eksrci6im31dahgreq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCE1Rarz_-es81yjFOxvy0ej8urPL2tVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855869281232-6cndejch2n6kg4eksrci6im31dahgreq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
